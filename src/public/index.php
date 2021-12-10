@@ -3,7 +3,7 @@
 require './../vendor/autoload.php';
 
 
-if(isset($_GET['url']) ? $path = $_GET['url'] : $path = '/')
+if(isset($_GET['p']) ? $path = $_GET['p'] : $path = '/')
 
 if ($path === "/") {
     (new App\Controller\BlogController())->getHomePage();

@@ -46,7 +46,7 @@
 
         public function UpdatePost($titre, $contenu, $auteur, $date, $id)
         {  
-            $sql = $this->pdo->prepare('UPDATE TABLE post SET WHERE id = :id');
+            $sql = $this->pdo->prepare('UPDATE TABLE posts SET WHERE id = :id');
             $sql->execute([
                 ':titre' => $titre,
                 ':titre' => $contenu,
@@ -61,7 +61,7 @@
         public function DeletePost($pdo, $id)
         {  
             PDOFactory::getPDO();
-            $sql = $this->pdo->prepare('DELETE FROM post SET WHERE id = :id');
+            $sql = $this->pdo->prepare('DELETE FROM posts SET WHERE id = :id');
             $sql->execute([
                 ':id' => $id
             ]);
