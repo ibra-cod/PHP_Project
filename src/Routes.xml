@@ -1,0 +1,7 @@
+<routes>
+
+<!--- Pour le front-->
+<route p="" controller="BlogController" action="index">
+<route p="article" controller="BlogController" action="show" params="id">
+
+</routes>
